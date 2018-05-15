@@ -1,17 +1,16 @@
 <div id="s_20">
-	<h4>AfterViewInit</h4>
-<p class="fragment small-letters">
-	So, why are we using <code class="code-part">AfterViewInit</code> interface, and the ViewChild decorator?
-</p>
-	<p class="fragment notes">
-		We need access to the component DOM view and its children.
-	</p>
-	<p class="fragment notes">from the angular docs about <a href="https://angular.io/guide/lifecycle-hooks" rel="noopener">lifecycle hooks</a>: <br/>
-		<em><code class="code-part small-code">ngAfterViewInit()</code>
-		is called once after Angular initializes the component's views and child views / the view that a directive is in.</em>
-	</p>
-	<p class="fragment notes">we use <code class="code-part small-code">@ViewChild('mapElement') mapElm: ElementRef;</code> <br/>
-	to let angular know that we are looking for a native DOM element.
-	</p>
-	<p class="fragment notes">then we hook it to <code class="code-part small-code">ngAfterViewInit()</code> where the view children have been created.</p>
+	<h4>DeviceProximityEvent</h4>
+	<p>distance of a nearby physical object using the proximity sensor of a device</p>
+	<p>We'll use <code class="code-part">max</code>, <code class="code-part">min</code>
+		(max-min sensing distance the sensor is able to report, in centimeters) and <code class="code-part">value</code> for the current proximity, in centimeters.</p>
+	<pre class="fragment full">
+		<code class="hljs small-code" data-trim contenteditable>
+window.addEventListener('deviceproximity', function(event) {
+    const min = event.min;
+    const max = event.max;
+    const value = event.value;
+			...
+});
+		</code>
+	</pre>
 </div>

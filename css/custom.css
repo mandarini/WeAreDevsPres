@@ -132,3 +132,19 @@ span.highlighted {
     float: left;
     width: 50%;
 }
+
+.white-bg h4 {
+    color: black;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+
+.side-pics img {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.color-it {
+    color: #fff400;
+}

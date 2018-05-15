@@ -148,3 +148,7 @@ span.highlighted {
 .color-it {
     color: #fff400;
 }
+
+.reveal ol.small-letters li {
+    font-size: 80%;
+}
